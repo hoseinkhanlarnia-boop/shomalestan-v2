@@ -5,10 +5,7 @@ export const supabase = createClient(
  'sb_publishable_LvOqJuYFDMiYtOStyGqkZw_FEkqGzb_'
 )
 
-export const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SECRET_KEY!
-)
+
 
 export type Property = {
   id: number
