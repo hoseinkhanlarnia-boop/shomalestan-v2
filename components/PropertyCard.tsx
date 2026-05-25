@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import { Property, formatPrice } from '@/lib/supabase'
 import { MapPin, Users, Bed, Maximize2, Star } from 'lucide-react'
