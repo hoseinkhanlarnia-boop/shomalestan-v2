@@ -83,7 +83,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
                 <h2 className="font-bold text-gray-800 mb-4">✨ امکانات</h2>
                 <div className="flex flex-wrap gap-2">
-                  {amenities.map((a,i) => (
+                  {amenities.map((a: string, i: number) => (
                     <span key={i} className="bg-forest-50 text-forest-700 text-xs px-3 py-2 rounded-xl font-medium border border-forest-100">{a}</span>
                   ))}
                 </div>
