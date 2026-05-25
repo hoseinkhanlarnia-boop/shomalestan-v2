@@ -1,4 +1,3 @@
-'use client'
 import { supabase, Property } from '@/lib/supabase'
 import Navbar from '@/components/Navbar'
 import PropertyCard from '@/components/PropertyCard'
@@ -9,7 +8,7 @@ import { Search, MapPin, Home, ChevronLeft } from 'lucide-react'
 const PROVINCES = ['مازندران', 'گیلان', 'گلستان']
 const TYPES = ['🏕 کلبه', '🏊 ویلا استخردار', '🏔 کلبه سوئیسی', '🏡 خانه روستایی', '🛁 ویلا با جکوزی', '🌿 ویلا ییلاقی']
 
-export default function HomePage({ searchParams }: { searchParams: { q?: string; province?: string; type?: string } }) {
+export default async function HomePage({ searchParams }: { searchParams: { q?: string; province?: string; type?: string } }) {
   let query = supabase.from('properties').select('*').eq('status', 'approved').order('created_at', { ascending: false })
 
   if (searchParams.q) {
