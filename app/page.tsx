@@ -30,7 +30,7 @@ export default async function HomePage({
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="relative h-[580px] flex items-center justify-center overflow-hidden">
+     <section className="relative h-[380px] flex items-center justify-center overflow-hidden">
        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-green-900 via-green-800 to-black"/>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"/>
         <div className="relative z-10 text-center text-white px-4 max-w-3xl mx-auto">
