@@ -21,7 +21,7 @@ export default function PropertyCard({ prop }: { prop: Property }) {
       <div className="relative h-52 bg-gradient-to-br from-forest-100 to-forest-200 overflow-hidden">
         {firstPhoto ? (
           <img
-            src={`https://api.telegram.org/file/bot${process.env.NEXT_PUBLIC_BOT_TOKEN}/${firstPhoto}`}
+            src={firstPhoto}
             alt={prop.village}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             onError={(e) => { (e.target as HTMLImageElement).style.display='none' }}
