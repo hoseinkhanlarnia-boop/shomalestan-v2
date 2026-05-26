@@ -4,9 +4,6 @@ export const supabase = createClient(
   'https://ilrulqnoxcibeeigqfoi.supabase.co',
  'sb_publishable_LvOqJuYFDMiYtOStyGqkZw_FEkqGzb_'
 )
-
-
-
 export type Property = {
   id: number
   created_at: string
